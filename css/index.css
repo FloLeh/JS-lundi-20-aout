@@ -1,0 +1,42 @@
+html {
+  font-size: 35px;
+}
+
+body {
+  margin: 0;
+}
+
+.resultat {
+  height: 1.3em;
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.tableau {
+  border: 1px solid black;
+  display: flex;
+  justify-content:center;
+  cursor: pointer;
+}
+
+.ligne {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.chiffre, .operateur, .equal, .clear {
+  border: 1px solid black;
+  padding : 50px;
+  transition: all ease-in 0.1s;
+}
+
+.chiffre:hover, .operateur:hover, .equal:hover, .clear:hover {
+  background-color: rgba(0,0,0,.4);
+  color: white;
+}
+
+.droite {
+  margin: 0;
+}
