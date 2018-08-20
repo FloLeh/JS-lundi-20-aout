@@ -1,13 +1,16 @@
 var res = "";
 var fin = false;
 function press_number(e) {
-  console.log(e.target.innerHTML);
   if (e.target.innerHTML.match(/[0-9]/)){
+    if (fin == false) {
+      res = "";
+      fin = true;
+    }
     res += e.target.innerHTML;
-    fin = true;
   }
   else {
     res += " " + e.target.innerHTML +" ";
+    fin = true;
   }
 
   $('.resultat').text(res);
@@ -56,7 +59,7 @@ function equal() {
   }
   res = result;
   $('.resultat').text(result);
-
+  fin = false;
 }
 
 $('.equal').click(equal);
